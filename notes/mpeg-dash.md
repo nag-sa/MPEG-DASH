@@ -13,7 +13,7 @@ Let’s assume that the video has been encoded at the bitrate ladder shown above
 If the bandwidth suddenly drops to 5 mbps, then the player will probably request for the 4 mbps chunk from the server because it is risky to ask for the 5 mbps chunk. It then receives and plays back the 4 mbps chunk.
 This process continues throughout the video. This is how the bitrate and quality are adaptively varied to adapt to the varying bandwidth conditions.
 
-MPEG-DASH (Dynamic Adaptive Streaming) is an HTTP-based streaming protocol for delivering video(VOD and Live stream) to the end-user from an HTTP server. In MPEG-DASH, a video is split into segments and this information is recorded in an MPD. The MPD is first delivered to the player, which uses it to request segments of the appropriate bitrate & resolution based on the network conditions and buffer fullness.
+MPEG-DASH (Dynamic Adaptive Streaming) is an HTTP-based streaming protocol for delivering video(VOD and Live stream) to the end-user from an HTTP server. In MPEG-DASH, a video is split into segments and this information is recorded in an MPD(Media Presentation Description) . The MPD is first delivered to the player, which uses it to request segments of the appropriate bitrate & resolution based on the network conditions and buffer fullness.
 As its name suggests, DASH or Dynamic Adaptive Streaming over HTTP works on the principles of ABR or Adaptive Bitrate Streaming. In a nutshell, this is how MPEG-DASH works –
 
 How does MPEG-DASH work - Architecture
